@@ -1,2 +1,4 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= simple_form_for @lesson do |f| %>
+ <%= f.input :lesson_id, collection: Lessons.all %>
+ <%= f.submit "submit", class: "btn btn-primary" %>
+<% end %>

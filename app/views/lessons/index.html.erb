@@ -1,0 +1,8 @@
+<div class="container">
+  <% @lessons.each do |lesson| %>
+  <div class="card">
+   <div class="text"><p><b>Class - <%= lesson.speciality %> Price - <%= lesson.price %> Date - <%= lesson.user_id %></b></p></div>
+  <%= link_to "View", lesson_path(lesson) %>
+  <% end %>
+</div>
+</div>

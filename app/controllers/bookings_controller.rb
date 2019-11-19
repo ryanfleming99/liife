@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
       render :new
   end
 
-  def edit;end
+  def edit; end
 
   def update
     @booking.update(booking_params)

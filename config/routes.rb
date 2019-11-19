@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   resources :lessons do
     resources :bookings, only: [:new, :create]
     end
+
+  namespace :user do
+    root :to => "user#home"
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

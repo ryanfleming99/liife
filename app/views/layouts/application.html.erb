@@ -10,7 +10,8 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon <%= "navbar-fixed" if params[:action] == "home" %>">
       <%= link_to "#", class: "navbar-brand" do %>
         <%= image_tag "https://res.cloudinary.com/debjoekzj/image/upload/v1574182391/Liife_Logo_1_iv03ex.png" %>
       <% end %>

@@ -1,0 +1,7 @@
+<h1>Create a new lesson</h1>
+
+<%= simple_form_for @lesson do |f| %>
+  <%= f.input :speciality, collection: ["maths", "english", "science", "history", "ruby", "drums"] %>
+  <%= f.input :price, collection: 10..50 %>
+  <%= f.button :submit, class: "btn btn-primary"%>
+<% end %>

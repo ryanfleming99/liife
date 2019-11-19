@@ -5,7 +5,8 @@ class BookingsController < ApplicationController
     @bookings = Booking.all
   end
 
-  def show;end
+  def show
+  end
 
   def new
     @booking = Booking.new
@@ -16,9 +17,11 @@ class BookingsController < ApplicationController
     if @booking.save
     else
       render :new
+    end
   end
 
-  def edit; end
+  def edit
+  end
 
   def update
     @booking.update(booking_params)

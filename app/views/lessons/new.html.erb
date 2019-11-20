@@ -1,8 +1,8 @@
 <div class="container">
-<h1>Create a new lesson</h1>
+<h1 class="d-flex justify-content-center">Create a new lesson</h1>
 
 <%= simple_form_for @lesson do |f| %>
-  <%= f.input :speciality, collection: ["maths", "english", "science", "history", "ruby", "drums"] %>
+  <%= f.input :speciality, collection: ["Motivation", "Survival", "Yoga", "Diet", "Dating", "Time"] %>
   <%= f.input :price, collection: 10..50 %>
   <%= f.button :submit, class: "btn btn-primary"%>
 <% end %>

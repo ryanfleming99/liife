@@ -1,4 +1,6 @@
 // Specific CSS for your home-page
+*{font-family: 'Roboto', sans-serif;}
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -6,6 +8,8 @@
   padding: 150px 0;
   height: 800px;
   margin-top: 0px;
+  display: flex;
+  align-items: center;
 }
 
 body {
@@ -20,4 +24,33 @@ body {
   height: 120px;
   background: white;
   padding: 10px;
+}
+
+
+.search-box{
+    display: flex;
+    position: absolute;
+    width: 750px;
+    height: 186px;
+    background: #00A469;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    border: 12px solid #0C8459;
+    color: white;
+    margin: 0 auto;
+    justify-content: space-around;
+      h1 {
+        font-family: 'Roboto', sans-serif!important;
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 18px;
+      }
+  }
+
+.seach-bar{
+  background-color: grey;
+  padding: 5px;
+  width: 650px;
+  height: 90px;
+
 }

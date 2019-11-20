@@ -1,10 +1,34 @@
+.lesson-container{
+  padding:20px;
+  margin: 200px 205px 15px 205px;
+
+}
+
+.lesson-banner{
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  width: 100%;
+  top: 0;
+  background-color: #00A469;
+  height: 250px;
+  z-index: -1000;
+
+
+
+
+
+}
+
 .card {
   display:flex;
   justify-content: space-between;
   justify-content: space-around;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   overflow: hidden;
-  height: 120px;
+  height: 208px;
   background: white;
   padding: 10px;
+  margin-bottom: 14px;
 }

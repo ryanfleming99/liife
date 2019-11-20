@@ -8,7 +8,6 @@
 .navbar-fixed {
   position: fixed;
   width: 100%;
-  height: 63px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -23,6 +22,16 @@
 width: 110px;
 }
 
-.nav-item{
+.nav-item {
   color: white!important;
+  padding:10px;
+}
+.nav-item {
+  color: white!important;
+  padding:10px;
+
+}
+
+.nav-image {
+  width:10%;
 }

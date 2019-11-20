@@ -1,10 +1,11 @@
-.background-image {
-  background-image: url(https://res.cloudinary.com/debjoekzj/image/upload/v1574178878/home_page_dlkfnd.png?2);
+.bg-image {
+    display:flex;
+  background-image: url(http://help.1stpaypos.com/resources/images/ra_checkout_014.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items:center;
   justify-content:center;
-  display:flex;
+
 }

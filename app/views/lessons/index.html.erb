@@ -1,9 +1,12 @@
-<div class="container">
+<div class="lesson-banner" style="background-color: #00A469;">
+</div>
+
+<div class="lesson-container">
   <% @lessons.each do |lesson| %>
-  <div class="card">
-  <p><b>Class - <%= lesson.speciality %> Price - <%= lesson.price %> Date - <%= lesson.user_id %></b></p>
-  <%= link_to "View", lesson_path(lesson) %>
-</div>
-  <% end %>
-</div>
+    <div class="card">
+      <p><b>Class - <%= lesson.speciality %> Price - <%= lesson.price %> Date - <%= lesson.user_id %></b></p>
+        <%= link_to "View", lesson_path(lesson) %>
+    </div>
+    <% end %>
+    </div>
 </div>

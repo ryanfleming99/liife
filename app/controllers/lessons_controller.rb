@@ -27,13 +27,16 @@ class LessonsController < ApplicationController
   end
 
   def update
-    @lesson.update(lesson_params)
-    #redirect to
+    if @lesson.update(lesson_params)
+      redirect_to @lesson, notice: 'Lesson has been updated'
+    else
+      render :edit
+    end
   end
 
   def destroy
     @lesson.destroy
-    #redirect to
+    redirect_to lessons_path, notice: 'Lesson was successfully destroyed.'
   end
 
   private

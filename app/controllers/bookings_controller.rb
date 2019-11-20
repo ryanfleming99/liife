@@ -9,6 +9,7 @@ class BookingsController < ApplicationController
   end
 
   def new
+    @lesson = Lesson.find(params[:lesson_id])
     @booking = Booking.new
   end
 

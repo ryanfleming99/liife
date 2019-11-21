@@ -4,6 +4,7 @@
         <div class="card">
           <%= @lesson.speciality %>
           <%= @lesson.price %>
+          <%= @lesson.description %>
           <%= link_to "Book Now", new_lesson_booking_path(@lesson) %>
           <%= link_to "Edit lesson", edit_lesson_path(@lesson) %>
           <%= link_to "Delete lesson", lesson_path(@lesson), method: :delete %>

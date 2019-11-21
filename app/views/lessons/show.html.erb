@@ -1,7 +1,8 @@
     <div class="container">
     <div class="lesson-card-container">
       <h1><%= @lesson.speciality  %></h1>
-        <div class="card">
+
+        <div class="lessonCard">
           <%= @lesson.speciality %>
           <%= @lesson.price %>
           <%= link_to "Book Now", new_lesson_booking_path(@lesson) %>

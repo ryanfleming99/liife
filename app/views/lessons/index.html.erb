@@ -1,4 +1,7 @@
 <div class="lesson-banner" style="background-color: #00A469;">
+  <div class="search-bar-lessons">
+      <h1><%= @lesson.speciality %> Mentors in</h1>
+  </div>
 </div>
 
 <div class="lesson-container">
@@ -13,13 +16,14 @@
           <div>
           <p><%= lesson.price %></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>Description</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           </div>
           <p>blah blah </p>
         </div>
       </div>
       <div class="buttons">
-        <button>asc</button>
-        <button>asc</button>
+        <%= link_to "View Details", new_lesson_booking_path(lesson), class: 'whitetext' %>
       </div>
     </div>
   <% end %>

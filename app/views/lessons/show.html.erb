@@ -1,23 +1,17 @@
-    <div class="container">
-    <div class="lesson-card-container">
-      <h1><%= @lesson.speciality  %></h1>
-<<<<<<< HEAD
-
-        <div class="lessonCard">
-=======
-        <div class="card">
-          <p><%= current_user.id %></p>
-          <p><%= @lesson.user.id %></p>
-          <div class="lessonCard">
->>>>>>> master
-          <%= @lesson.speciality %>
-          <%= @lesson.price %>
-          <%= link_to "Book Now", new_lesson_booking_path(@lesson) %>
-          <% if @lesson.user == current_user %>
-            <%= link_to "Edit lesson", edit_lesson_path(@lesson) %>
-            <%= link_to "Delete lesson", lesson_path(@lesson), method: :delete %>
-          <% end %>
-        </div>
-      <button><%= link_to "Back to Lessons", lessons_path %></button>
+<div class="container">
+  <div class="lesson-card-container">
+    <h1><%= @lesson.speciality  %></h1>
+    <div class="card">
+      <div class="lessonCard">
+        <%= @lesson.speciality %>
+        <%= @lesson.price %>
+        <%= link_to "Book Now", new_lesson_booking_path(@lesson) %>
+        <% if @lesson.user == current_user %>
+          <%= link_to "Edit lesson", edit_lesson_path(@lesson) %>
+          <%= link_to "Delete lesson", lesson_path(@lesson), method: :delete %>
+        <% end %>
+      </div>
     </div>
-    </div>
+    <button><%= link_to "Back to Lessons", lessons_path %></button>
+  </div>
+</div>

@@ -7,7 +7,6 @@
 <div class="lesson-container">
 
   <% @lessons.each do |lesson| %>
-
     <div class="card-product">
   <!-- use - USER.AVATAR for user profile image to be dynamic -->
       <div class="d-flex align-items-center justify-content-start">
@@ -15,6 +14,8 @@
         <div class="card-product-infos">
           <h2><%= lesson.speciality %></h2>
           <div>
+          <p><%= lesson.price %></p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <p>Description</p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           </div>

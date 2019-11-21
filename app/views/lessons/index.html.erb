@@ -1,12 +1,12 @@
 <div class="lesson-banner" style="background-color: #00A469;">
+  <div class="search-bar-lessons">
+      <h1><%= @lesson.speciality %> Mentors in</h1>
+  </div>
 </div>
 
 <div class="lesson-container">
+
   <% @lessons.each do |lesson| %>
-    <div class="card">
-      <p><b>Class - <%= lesson.speciality %> Price - <%= lesson.price %> Date - <%= lesson.user_id %> Description - <%= lesson.description %></b></p>
-        <%= link_to "View", lesson_path(lesson) %>
     </div>
-    <% end %>
-    </div>
+  <% end %>
 </div>

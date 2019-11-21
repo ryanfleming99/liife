@@ -11,3 +11,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #FFFFFF;
+  h1{font-weight: bold!important;
+    font-size: 40px;}
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+

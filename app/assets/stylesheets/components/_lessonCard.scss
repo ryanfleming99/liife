@@ -1,34 +1,55 @@
-.lesson-container{
-  padding:20px;
-  margin: 200px 205px 15px 205px;
-
-}
-
-.lesson-banner{
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  padding: 15px;
-  width: 100%;
-  top: 0;
-  background-color: #00A469;
-  height: 250px;
-  z-index: -1000;
-
-
-
-
-
-}
-
-.card {
-  display:flex;
-  justify-content: space-between;
-  justify-content: space-around;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.card-product {
   overflow: hidden;
-  height: 208px;
+  // height: 120px;
   background: white;
-  padding: 10px;
-  margin-bottom: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: between;
+  margin-bottom:15px;
+  border-radius: 10px;
+
+}
+
+.card-product img {
+  // height: 100%;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+    margin-left: 20px;
+}
+
+.card-product h2 {
+  font-size: 20px;
+  font-weight: bold;
+  // margin: 0;
+  font-align:left;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+
+.buttons {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  align-items:center;
+  padding:20px;
+  align:right;
+}
+
+.whitetext {
+  background-color:green;
+  color:white!important;
+
 }

@@ -28,17 +28,17 @@
       </li>
       <% end %>
           <% if user_signed_in? %>
-            <li class="nav-item-login"><%= link_to("Logout", destroy_user_session_path, method: :delete) %></li>
+            <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete, class:'nav-link' %></li>
           <% else %>
-            <li class="nav-item-login"><%= link_to("Login", new_user_session_path) %></li>
+            <li class="nav-item"><%= link_to "Login", new_user_session_path, class:'nav-link' %></li>
           <% end %>
         </div>
       </li>
     </ul>
   </div>
 </div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<!--<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

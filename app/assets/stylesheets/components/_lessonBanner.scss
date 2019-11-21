@@ -1,0 +1,44 @@
+.lesson-container{
+  padding:20px;
+  margin: 200px 205px 15px 205px;
+
+}
+
+.lesson-banner{
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  width: 100%;
+  top: 0;
+  background-color: #00A469;
+  height: 250px;
+  z-index: -1000;
+}
+.lesson-banner{
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  width: 100%;
+  top: 0;
+  background-color: #00A469;
+  height: 250px;
+  z-index: -1000;
+}
+
+.search-bar-lessons {
+
+  height:50px;
+  color: white;
+  text-align: left;
+  padding:30px;
+  justify-content: space-around;
+  margin: 70px;
+  h1 {
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: bold!important;
+    padding: 20px;
+    font-size: 40px;
+
+  }

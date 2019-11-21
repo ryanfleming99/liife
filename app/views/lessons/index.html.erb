@@ -13,17 +13,16 @@
       <div class="d-flex align-items-center justify-content-start">
         <img src="https://media.licdn.com/dms/image/C4D03AQG3mVhghooy4Q/profile-displayphoto-shrink_800_800/0?e=1579737600&v=beta&t=FLfJTON6XeSWySuhNByK74tMa7BLSUY-ylYEXNiiRvQ" />
         <div class="card-product-infos">
-          <h2>Motivation</h2>
+          <h2><%= lesson.speciality %></h2>
           <div>
           <p>Description</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           </div>
           <p>blah blah </p>
         </div>
       </div>
       <div class="buttons">
-        <button>asc</button>
-        <button>asc</button>
+        <%= link_to "View Details", new_lesson_booking_path(lesson), class: 'whitetext' %>
       </div>
     </div>
   <% end %>

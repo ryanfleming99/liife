@@ -1,6 +1,7 @@
 <div class="container">
  <%= simple_form_for @lesson do |f| %>
- <%= f.input :speciality, collection: ["math", "english", "spanish", "geographahaha"] %>
+ <%= f.input :speciality, collection: ["Motivation", "Survival", "Yoga", "Diet", "Dating", "Time"] %>
+ <%= f.input :description %>
  <%= f.input :price, collection: 10..50 %>
  <%= f.submit "submit", class: "btn btn-primary" %>
 <% end %>

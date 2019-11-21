@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'checkout', to: 'bookings#checkout'
+    get 'profile', to: 'pages#profile'
+      get 'profile', to: 'pages#profile/edit'
+
 
   resources :lessons do
     resources :bookings, only: [:new, :create, :checkout]

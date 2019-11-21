@@ -2,13 +2,18 @@ class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index]
 
-
   def index
     @lessons = Lesson.all
+
     @lesson = Lesson.new
   end
 
   def show
+    if params[:query].present?
+      @lessons = Lesson.where(speciality: params[:query])
+    else
+      @lessons = Lesson.all
+    end
   end
 
   def new

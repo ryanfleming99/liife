@@ -3,17 +3,16 @@ class LessonsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
-    @lessons = Lesson.all
-
-    @lesson = Lesson.new
-  end
-
-  def show
     if params[:query].present?
       @lessons = Lesson.where(speciality: params[:query])
     else
       @lessons = Lesson.all
     end
+
+    @lesson = Lesson.new
+  end
+
+  def show
   end
 
   def new

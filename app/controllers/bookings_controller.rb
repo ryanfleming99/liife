@@ -14,8 +14,12 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @booking = Booking.new(booking_params)
+    @booking = Booking.new
+    @booking.date = Date.today
+    @booking.lesson = Lesson.find(params[:lesson_id])
+    @booking.user = current_user
     if @booking.save
+      redirect_to profile_path, notice: 'Booking completed'
     else
       render :new
     end

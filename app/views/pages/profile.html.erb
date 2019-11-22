@@ -7,7 +7,7 @@
     <% if current_user.photo.attached? %>
     <%= cl_image_tag current_user.photo.key, height: 150, width: 150, crop: :fill %>
     <% else %>
-    <%= image_tag ("default.png"), height: 150, width: 100, crop: :fill %>
+    <%= image_tag ("default.png"), height: 150, width: 150, crop: :fill %>
     <% end %>
 
   <div class="UserEmail"> <h6> Email: <%=  current_user.email%></h6></div>

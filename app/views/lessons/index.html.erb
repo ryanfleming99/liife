@@ -1,11 +1,8 @@
 <div class="lesson-banner" style="background-color: #00A469;">
-  <div class="search-bar-lessons">
-      <h1><%= @lesson.speciality %> Mentors in</h1>
-  </div>
 </div>
 
 <div class="lesson-container">
-
+<h1 class="d-flex justify-content-center align-items-center">Lessons</h1>
   <% @lessons.each do |lesson| %>
 
     <div class="card-product">
@@ -13,9 +10,9 @@
       <div class="d-flex align-items-center justify-content-start">
         <img src="https://media.licdn.com/dms/image/C4D03AQG3mVhghooy4Q/profile-displayphoto-shrink_800_800/0?e=1579737600&v=beta&t=FLfJTON6XeSWySuhNByK74tMa7BLSUY-ylYEXNiiRvQ" />
         <div class="card-product-infos">
-          <h2><%= lesson.speciality %></h2>
-          <p><%= lesson.description %></p>
-          <p>£<%= lesson.price %></p>
+          <p style="font-size:25px"><%= lesson.speciality %></p>
+          <p style="font-weight: bold"><%= lesson.description %></p>
+          <p style="font-weight: bold">Price : £<%= lesson.price %></p>
         </div>
       </div>
       <div class="buttons">

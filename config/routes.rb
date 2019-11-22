@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get 'profile', to: 'pages#profile/edit'
 
 
+
   resources :lessons do
     resources :bookings, only: [:new, :create]
     end

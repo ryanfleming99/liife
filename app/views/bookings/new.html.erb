@@ -2,6 +2,10 @@
 <div class="card">
   <h2><%= @lesson.speciality %></h2>
   <p><%= @lesson.price %></p>
-<%= link_to "Confirm & Pay", checkout_booking_path(@lesson)  %>
+<%#= link_to "Confirm & Pay", checkout_booking_path(@booking), data: { popup: true } %>
+    <!-- <span id="pay-btn">Confirm and pay</span> -->
+  <%= simple_form_for [@lesson, @booking], html: { id: 'pay-btn' } do |f| %>
+    <%= f.submit 'Book now' %>
+  <% end %>
 </div>
 </div>

@@ -6,9 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: between;
-  margin-bottom:15px;
+  padding:10px;
+  margin-top:20px;
+  margin-bottom:10px;
   border-radius: 10px;
-
 }
 
 .card-product img {
@@ -36,6 +37,7 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+  width:400px;
 }
 
 
@@ -43,15 +45,29 @@
   display:flex;
   flex-direction: column;
   width: 100%;
-  align-items:center;
+    align-items: flex-end;
   padding:20px;
   align:right;
 }
 
 .whitetext {
-  background-color:green;
+  background-color:#00a469;
   color:white!important;
   padding:10px;
   border-radius: 5px;
 
+}
+
+.cardDetails {
+  overflow: hidden;
+  // height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: between;
+  padding:10px;
+  margin-top:20px;
+  margin-bottom:10px;
+  border-radius: 10px;
 }

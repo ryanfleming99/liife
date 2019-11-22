@@ -19,6 +19,10 @@
   color: white!important;
 }
 
+.nav-link :active {
+  color: black!important;
+}
+
 .navbar-lewagon .navbar-brand {
 width: 110px;
 }
@@ -26,11 +30,6 @@ width: 110px;
 .nav-item {
   color: white!important;
   padding:10px;
-}
-.nav-item {
-  color: white!important;
-  padding:10px;
-
 }
 
 .nav-image {

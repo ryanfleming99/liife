@@ -1,32 +1,20 @@
+
+<div class="lesson-banner" style="background-color: #00A469;">
+</div>
+
 <div class="container">
-  <div class="lesson-card-container">
-
-
-      <div class="card">
-        <div class="d-flex align-items-center justify-content-around">
-          <div class="lessonCard p-4">
-            <div class="lesson-name">
-              <h2><%= @lesson.speciality %></h2>
-            </div>
-
-            <div class="description-tag">
-              <p><%= @lesson.description %></p>
-            </div>
-
-            <div class="price-tag">
-              <h6>Price</h6>
-              <%= @lesson.price %><p>£/per hour</p>
-            </div>
-          </div>
-          <div class="d-flex w-100 align-items-center justify-content-center flex-column p-4">
-            <%= link_to "Book Now", new_lesson_booking_path(@lesson), class: 'book-button' %>
+  <div class="cardDetails">
+    <div class="details">
+          <p style="font-size:25px; padding:15px;"><%= @lesson.speciality %><br><%= @lesson.description %></p>
+          <p style="font-weight: bold; padding:15px;">Price : £<%= @lesson.price %></p>
+    </div>
+    <div class="d-flex-end">
+           <%= link_to "Book Now", checkout_booking_path(@lesson), class: 'book-button' %>
             <% if @lesson.user == current_user %><br>
-              <%= link_to "Edit lesson", edit_lesson_path(@lesson), class: 'edit-button' %><br>
+              <%= link_to "Edit lesson", edit_lesson_path(@lesson), class: 'edit-button' %>
               <%= link_to "Delete lesson", lesson_path(@lesson), class: 'delete-button', method: :delete %>
             <% end %>
-          </div>
-        </div>
     </div>
     <%= link_to "Back to Lessons", lessons_path %>
-  </div>
+    </div>
 </div>

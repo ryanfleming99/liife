@@ -1,18 +1,22 @@
 <div class="container">
   <div class="profileBox">
+    <div class="UserName"> <h3><%=  current_user.first_name%></h3></div>
     <% if current_user.photo.attached? %>
-    <%= cl_image_tag current_user.photo.key, height: 300, width: 400, crop: :fill %>
+    <%= cl_image_tag current_user.photo.key, height: 150, width: 150, crop: :fill %>
     <% else %>
-    <%= image_tag ("default.png"), height: 300, width: 300, crop: :fill %>
+    <%= image_tag ("default.png"), height: 150, width: 100, crop: :fill %>
     <% end %>
 
+  <div class="UserEmail"> <h6> Email: <%=  current_user.email%></h6></div>
+  <div class="UserDescription"> <p> <%=  current_user.description%></p></div>
+  <div>
 
-  <div class="User"> <h1><%=  current_user.email%></h1></div>
-
-
-    <%= link_to 'Edit Profile', edit_user_registration_path %>
+    <h6>Hosting lessons</h6>
     <% current_user. lessons.each do |lesson| %>
-    <%= lesson.speciality %>
+    <%= lesson.speciality %>,
     <% end %>
   </div>
+
+  <%= link_to 'Edit Profile', edit_user_registration_path, class:"EditProfile"%>
+</div>
 </div>

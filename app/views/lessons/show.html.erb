@@ -9,7 +9,7 @@
           <p style="font-weight: bold; padding:15px;">Price : £<%= @lesson.price %></p>
     </div>
     <div class="d-flex-end">
-           <%= link_to "Book Now", checkout_booking_path(@lesson), class: 'book-button' %>
+           <%= link_to "Book Now", new_lesson_booking_path(@lesson), class: 'book-button' %>
             <% if @lesson.user == current_user %><br>
               <%= link_to "Edit lesson", edit_lesson_path(@lesson), class: 'edit-button' %>
               <%= link_to "Delete lesson", lesson_path(@lesson), class: 'delete-button', method: :delete %>

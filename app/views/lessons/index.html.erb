@@ -8,7 +8,11 @@
     <div class="card-product">
   <!-- use - USER.AVATAR for user profile image to be dynamic -->
       <div class="d-flex align-items-center justify-content-start">
-        <img src="https://media.licdn.com/dms/image/C4D03AQG3mVhghooy4Q/profile-displayphoto-shrink_800_800/0?e=1579737600&v=beta&t=FLfJTON6XeSWySuhNByK74tMa7BLSUY-ylYEXNiiRvQ" />
+        <% if lesson.user.photo.attached? %>
+          <%= cl_image_tag lesson.user.photo.key, height: 150, width: 150, crop: :fill %>
+        <% else %>
+          <%= image_tag "default.png", height: 150, width: 150, crop: :fill %>
+        <% end %>
         <div class="card-product-infos">
           <p style="font-size:25px"><%= lesson.speciality %></p>
           <p style="font-weight: bold"><%= lesson.description %></p>

@@ -13,4 +13,8 @@ class PagesController < ApplicationController
   def page_params
     params.require(:photo).permit(:title, :body, :photo)
   end
+
+  def profile
+    @user = current_user
+  end
 end

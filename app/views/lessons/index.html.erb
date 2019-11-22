@@ -14,15 +14,12 @@
         <img src="https://media.licdn.com/dms/image/C4D03AQG3mVhghooy4Q/profile-displayphoto-shrink_800_800/0?e=1579737600&v=beta&t=FLfJTON6XeSWySuhNByK74tMa7BLSUY-ylYEXNiiRvQ" />
         <div class="card-product-infos">
           <h2><%= lesson.speciality %></h2>
-          <div>
           <p><%= lesson.description %></p>
-          <p><%= lesson.price %></p>
-          </div>
-          <p>blah blah </p>
+          <p>£<%= lesson.price %></p>
         </div>
       </div>
       <div class="buttons">
-        <%= link_to "View Details", new_lesson_booking_path(lesson), class: 'whitetext' %>
+        <%= link_to "View Details", lesson_path(lesson), class: 'whitetext' %>
       </div>
     </div>
   <% end %>

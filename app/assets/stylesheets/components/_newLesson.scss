@@ -1,0 +1,48 @@
+
+.description-tag {
+  width: 70%;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 28px
+}
+
+
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 300px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.book-button {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.edit-button {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #EF4339;
+  transition: background 0.3s ease;
+}
+
+.delete-button {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #9D8C8C;
+  transition: background 0.3s ease;
+}

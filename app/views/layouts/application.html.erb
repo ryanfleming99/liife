@@ -11,8 +11,9 @@
   </head>
   <body style="background-color: #ffefe5;">
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon <%= "navbar-fixed" if params[:action] == "home" %>">
+        <%= link_to root_path do %>
         <%= image_tag "https://res.cloudinary.com/debjoekzj/image/upload/v1574182391/Liife_Logo_1_iv03ex.png", class: "nav-image" %>
-
+        <% end %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
